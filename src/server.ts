@@ -5,7 +5,7 @@ import { BookingService } from "./modules/bookings/booking.service";
 
 const startServer = async () => {
   try {
-    // Initialize database
+    // Initialize Database
     await initDB();
     console.log("Database connected successfully");
 
