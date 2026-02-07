@@ -23,7 +23,7 @@ app.use("/api/v1/users", userRoutes);
 app.use("/api/v1/vehicles", vehicleRoutes);
 app.use("/api/v1/bookings", bookingRoutes);
 
-// Health check endpoint
+// Health Check Endpoint
 app.get("/health", (req, res) => {
   res.status(200).json({
     success: true,
