@@ -6,13 +6,13 @@ import { createBookingSchema, updateBookingSchema } from "./booking.validation";
 
 const router = Router();
 
-// All routes require authentication
+// All Routes Require Authentication
 router.use(authenticate);
 
 router.post(
   "/",
   validate(createBookingSchema),
-  BookingController.createBooking
+  BookingController.createBooking,
 );
 
 router.get("/", BookingController.getAllBookings);
@@ -20,7 +20,7 @@ router.get("/", BookingController.getAllBookings);
 router.put(
   "/:bookingId",
   validate(updateBookingSchema),
-  BookingController.updateBooking
+  BookingController.updateBooking,
 );
 
 export default router;
