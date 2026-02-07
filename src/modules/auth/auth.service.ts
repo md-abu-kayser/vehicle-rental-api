@@ -16,7 +16,7 @@ export class AuthService {
     // User Exists
     const existingUser = await pool.query(
       "SELECT * FROM users WHERE email = $1",
-      [email]
+      [email],
     );
 
     if (existingUser.rows.length > 0) {
@@ -31,7 +31,7 @@ export class AuthService {
       `INSERT INTO users (name, email, password, phone, role) 
        VALUES ($1, $2, $3, $4, $5) 
        RETURNING id, name, email, phone, role`,
-      [name, email.toLowerCase(), hashedPassword, phone, role]
+      [name, email.toLowerCase(), hashedPassword, phone, role],
     );
 
     return result.rows[0];
@@ -46,7 +46,6 @@ export class AuthService {
     if (result.rows.length === 0) {
       throw new Error("Invalid credentials");
     }
-
     const user = result.rows[0];
 
     // Verify Password
@@ -60,7 +59,7 @@ export class AuthService {
     const token = jwt.sign(
       { id: user.id, email: user.email, role: user.role },
       config.jwt_secret,
-      { expiresIn: "7d" }
+      { expiresIn: "7d" },
     );
 
     // Remove Password
