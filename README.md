@@ -10,7 +10,7 @@
 
 A production-ready, enterprise-grade **Vehicle Rental Management REST API** built with Express.js, TypeScript, and PostgreSQL. Designed with modern architectural patterns, robust security, and comprehensive error handling.
 
-[Features](#features) • [Tech Stack](#tech-stack) • [Installation](#installation) - [API Documentation](#api-documentation) • [Contributing](#contributing)
+[Features](#features) - [Tech Stack](#tech-stack) - [Installation](#installation) - [API Documentation](#api-documentation) - [Contributing](#contributing)
 
 </div>
 
