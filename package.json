@@ -1,5 +1,5 @@
 {
-  "name": "expressjs-pg-assignment",
+  "name": "vehicle-rental-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/md-abu-kayser/expressjs-pg-assignment.git"
+    "url": "git+https://github.com/md-abu-kayser/vehicle-rental-api.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/md-abu-kayser/expressjs-pg-assignment/issues"
+    "url": "https://github.com/md-abu-kayser/vehicle-rental-api/issues"
   },
-  "homepage": "https://github.com/md-abu-kayser/expressjs-pg-assignment#readme",
+  "homepage": "https://github.com/md-abu-kayser/vehicle-rental-api#readme",
   "dependencies": {
     "bcrypt": "^6.0.0",
     "cors": "^2.8.5",
