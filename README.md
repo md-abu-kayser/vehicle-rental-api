@@ -1,4 +1,4 @@
-# 🚗 # Vehicle Rental Management API - Enterprise-ready REST Backend
+# 🚗 Vehicle Rental Management API - Enterprise-ready REST Backend
 
 <div align="center">
 
