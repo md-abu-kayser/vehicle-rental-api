@@ -6,7 +6,7 @@ import { updateUserSchema } from "./user.validation";
 
 const router = Router();
 
-// All routes
+// All Routes
 router.use(authenticate);
 
 // Admin only routes
