@@ -165,8 +165,8 @@ This Vehicle Rental Management System API is a comprehensive backend solution de
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/md-abu-kayser/expressjs-pg-assignment.git
-cd expressjs-pg-assignment
+git clone https://github.com/md-abu-kayser/vehicle-rental-api.git
+cd vehicle-rental-api
 ```
 
 ### Step 2: Install Dependencies
@@ -699,7 +699,7 @@ Authorization: Bearer {JWT_TOKEN}
 ## 📁 Project Structure
 
 ```
-expressjs-pg-assignment/
+vehicle-rental-api/
 ├── src/
 │   ├── app.ts                          # Express app setup & route configuration
 │   ├── server.ts                       # Server startup & initialization
@@ -880,7 +880,7 @@ The ISC License is a permissive license that is similar to the MIT License but w
 
 For issues, questions, or contributions, please:
 
-- **Open an Issue** on [GitHub Issues](https://github.com/md-abu-kayser/expressjs-pg-assignment/issues)
+- **Open an Issue** on [GitHub Issues](https://github.com/md-abu-kayser/vehicle-rental-api/issues)
 - **Check Existing Issues** before creating a new one
 - **Provide Clear Details** when reporting bugs
 
