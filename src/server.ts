@@ -9,23 +9,26 @@ const startServer = async () => {
     await initDB();
     console.log("Database connected successfully");
 
-    // Start server
+    // Start Server
     const port = config.port || 5000;
     const server = app.listen(port, () => {
       console.log(`Server is running on port ${port}`);
     });
 
     // Auto-return expired bookings every hour
-    setInterval(async () => {
-      try {
-        const count = await BookingService.processExpiredBookings();
-        if (count > 0) {
-          console.log(`Auto-returned ${count} expired booking(s)`);
+    setInterval(
+      async () => {
+        try {
+          const count = await BookingService.processExpiredBookings();
+          if (count > 0) {
+            console.log(`Auto-returned ${count} expired booking(s)`);
+          }
+        } catch (error) {
+          console.error("Error processing expired bookings:", error);
         }
-      } catch (error) {
-        console.error("Error processing expired bookings:", error);
-      }
-    }, 60 * 60 * 1000);
+      },
+      60 * 60 * 1000,
+    );
 
     process.on("SIGTERM", () => {
       console.log("SIGTERM received. Shutting down gracefully...");
