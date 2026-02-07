@@ -11,7 +11,7 @@ export class VehicleService {
     // Check if registration number exists
     const existingVehicle = await pool.query(
       "SELECT * FROM vehicles WHERE registration_number = $1",
-      [vehicleData.registration_number]
+      [vehicleData.registration_number],
     );
 
     if (existingVehicle.rows.length > 0) {
@@ -29,7 +29,7 @@ export class VehicleService {
         vehicleData.registration_number,
         vehicleData.daily_rent_price,
         vehicleData.availability_status,
-      ]
+      ],
     );
 
     return result.rows[0];
@@ -37,7 +37,7 @@ export class VehicleService {
 
   static async getAllVehicles() {
     const result = await pool.query(
-      "SELECT * FROM vehicles ORDER BY created_at DESC"
+      "SELECT * FROM vehicles ORDER BY created_at DESC",
     );
     return result.rows;
   }
@@ -58,7 +58,7 @@ export class VehicleService {
     // Check if vehicle exists
     const vehicleExists = await pool.query(
       "SELECT * FROM vehicles WHERE id = $1",
-      [id]
+      [id],
     );
 
     if (vehicleExists.rows.length === 0) {
@@ -69,7 +69,7 @@ export class VehicleService {
     if (updateData.registration_number) {
       const existingRegistration = await pool.query(
         "SELECT * FROM vehicles WHERE registration_number = $1 AND id != $2",
-        [updateData.registration_number, id]
+        [updateData.registration_number, id],
       );
 
       if (existingRegistration.rows.length > 0) {
@@ -77,7 +77,7 @@ export class VehicleService {
       }
     }
 
-    // Build update query
+    // Build Update Query
     const updates: string[] = [];
     const values: any[] = [];
     let valueIndex = 1;
@@ -132,7 +132,7 @@ export class VehicleService {
     const activeBookings = await pool.query(
       `SELECT COUNT(*) FROM bookings 
        WHERE vehicle_id = $1 AND status = 'active'`,
-      [id]
+      [id],
     );
 
     if (parseInt(activeBookings.rows[0].count) > 0) {
@@ -141,7 +141,7 @@ export class VehicleService {
 
     const result = await pool.query(
       "DELETE FROM vehicles WHERE id = $1 RETURNING id",
-      [id]
+      [id],
     );
 
     if (result.rows.length === 0) {
