@@ -36,7 +36,7 @@
 
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 
-<!-- Networking & Utilities -->
+<!-- Networking -->
 
 [![dotenv](https://img.shields.io/badge/dotenv-464646?logo=dotenv&logoColor=white)](https://github.com/motdotla/dotenv)
 
@@ -212,6 +212,8 @@ This Vehicle Rental Management System API is a comprehensive backend solution de
 
 ```bash
 git clone https://github.com/md-abu-kayser/vehicle-rental-api.git
+```
+```bash
 cd vehicle-rental-api
 ```
 
@@ -914,17 +916,16 @@ We welcome contributions from the community! Please follow these steps:
 
 ---
 
-## 📄 License
+### 📄 License
 
-This project is licensed under the **ISC License** - see the [LICENSE](LICENSE) file for details.
-
-The ISC License is a permissive license that is similar to the MIT License but with slightly clearer language.
+- This project is licensed under the **ISC License** - see the [LICENSE](LICENSE) file for details.
+- The ISC License is a permissive license that is similar to the MIT License but with slightly clearer language.
 
 ---
 
-## 📞 Support & Contact
+### 📞 Support & Contact
 
-For issues, questions, or contributions, please:
+**For issues, questions, or contributions, please:**
 
 - **Open an Issue** on [GitHub Issues](https://github.com/md-abu-kayser/vehicle-rental-api/issues)
 - **Check Existing Issues** before creating a new one
@@ -948,7 +949,6 @@ For issues, questions, or contributions, please:
 **Made with ❤️ by [Md Abu Kayser](https://github.com/md-abu-kayser)**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?logo=github)](https://github.com/md-abu-kayser)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://linkedin.com)
 
 </div>
 
