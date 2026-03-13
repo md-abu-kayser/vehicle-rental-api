@@ -1,20 +1,46 @@
 # 🚗 Vehicle Rental Management API - Enterprise-ready REST Backend
 
-<div align="center">
+<!-- MIT License -->
 
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue?logo=typescript)](https://www.typescriptlang.org/)
-[![Express.js](https://img.shields.io/badge/Express.js-5.2-green?logo=express)](https://expressjs.com/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Latest-336791?logo=postgresql)](https://www.postgresql.org/)
-[![Node.js](https://img.shields.io/badge/Node.js-20+-337933?logo=node.js)](https://nodejs.org/)
-[![License](https://img.shields.io/badge/License-ISC-blue.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
+
+<!-- Languages & Web Standards -->
+
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![ECMAScript Spec](https://img.shields.io/badge/ECMAScript-262-7A0BC0?logo=ecmascript&logoColor=white)](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/docs/)
+
+<!-- Infra & Runtime -->
+
+[![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)](https://expressjs.com/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+
+<!-- npm / auth / utility -->
+
+[![bcrypt](https://img.shields.io/badge/bcrypt-3.0.0-lightgrey)](https://www.npmjs.com/package/bcrypt)
+[![cors](https://img.shields.io/badge/cors-2.8.5-lightgrey)](https://www.npmjs.com/package/cors)
+[![jsonwebtoken](https://img.shields.io/badge/jsonwebtoken-8.5.1-lightgrey)](https://www.npmjs.com/package/jsonwebtoken)
+
+<!-- security headers / http logger -->
+
+[![helmet](https://img.shields.io/badge/helmet-npm-0F172A?logo=shield\&logoColor=white)](https://www.npmjs.com/package/helmet)
+[![morgan](https://img.shields.io/badge/morgan-npm-FF6B6B?\&logoColor=white)](https://www.npmjs.com/package/morgan)
+
+<!-- Zod validation -->
+
+[![Zod](https://img.shields.io/badge/Validation-Zod-6C63FF?logo=typescript&logoColor=white)](https://zod.dev/)
+[![zod on npm](https://img.shields.io/npm/v/zod?label=npm%20v&logo=npm&logoColor=white)](https://www.npmjs.com/package/zod)
+
+<!-- Databases -->
+
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+
+<!-- Networking & Utilities -->
+
+[![dotenv](https://img.shields.io/badge/dotenv-464646?logo=dotenv&logoColor=white)](https://github.com/motdotla/dotenv)
 
 A production-ready, enterprise-grade **Vehicle Rental Management REST API** built with Express.js, TypeScript, and PostgreSQL. Designed with modern architectural patterns, robust security, and comprehensive error handling.
-
-[Features](#features) - [Tech Stack](#tech-stack) - [Installation](#installation) - [API Documentation](#api-documentation) - [Contributing](#contributing)
-
-</div>
-
----
 
 ## 📋 Table of Contents
 
